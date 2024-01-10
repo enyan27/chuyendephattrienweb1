@@ -5,7 +5,6 @@ session_start();
 require_once 'models/UserModel.php';
 $userModel = new UserModel();
 
-
 if (!empty($_POST['submit'])) {
     $users = [
         'username' => $_POST['username'],
@@ -22,7 +21,6 @@ if (!empty($_POST['submit'])) {
         //Login failed
         $_SESSION['message'] = 'Login failed';
     }
-
 }
 
 ?>
